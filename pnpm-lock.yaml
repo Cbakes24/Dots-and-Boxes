@@ -43,6 +43,9 @@ importers:
       expo-blur:
         specifier: ~14.0.1
         version: 14.0.1(expo@52.0.19)(react-native@0.76.5)(react@18.3.1)
+      expo-camera:
+        specifier: ^16.0.10
+        version: 16.0.10(expo@52.0.19)(react-native-web@0.19.13)(react-native@0.76.5)(react@18.3.1)
       expo-constants:
         specifier: ~17.0.3
         version: 17.0.3(expo@52.0.19)(react-native@0.76.5)
@@ -52,6 +55,9 @@ importers:
       expo-haptics:
         specifier: ~14.0.0
         version: 14.0.0(expo@52.0.19)
+      expo-image-picker:
+        specifier: ^16.0.3
+        version: 16.0.3(expo@52.0.19)
       expo-linking:
         specifier: ~7.0.3
         version: 7.0.3(expo@52.0.19)(react-native@0.76.5)(react@18.3.1)
@@ -1790,7 +1796,7 @@ packages:
 
   /@expo/bunyan@4.0.1:
     resolution: {integrity: sha512-+Lla7nYSiHZirgK+U/uYzsLv/X+HaJienbD5AKX1UQZHYfWaP+9uuQluRB4GrEVWF0GZ7vEVp/jzaOT9k/SQlg==}
-    engines: {node: '>=0.10.0'}
+    engines: {'0': node >=0.10.0}
     dependencies:
       uuid: 8.3.2
 
@@ -4870,6 +4876,24 @@ packages:
       react-native: 0.76.5(@babel/core@7.26.0)(@babel/preset-env@7.26.0)(@types/react@18.3.17)(react@18.3.1)
     dev: false
 
+  /expo-camera@16.0.10(expo@52.0.19)(react-native-web@0.19.13)(react-native@0.76.5)(react@18.3.1):
+    resolution: {integrity: sha512-CKvC9dhBuR7VkuwXsBya+Ok2h97z9t7EefkP5sZNdPXZYab8K/zxcisGJZG6/mjCVqzHIftvCb3GxJtuRrDIBQ==}
+    peerDependencies:
+      expo: '*'
+      react: '*'
+      react-native: '*'
+      react-native-web: '*'
+    peerDependenciesMeta:
+      react-native-web:
+        optional: true
+    dependencies:
+      expo: 52.0.19(@babel/core@7.26.0)(@babel/preset-env@7.26.0)(react-native-webview@13.12.5)(react-native@0.76.5)(react@18.3.1)
+      invariant: 2.2.4
+      react: 18.3.1
+      react-native: 0.76.5(@babel/core@7.26.0)(@babel/preset-env@7.26.0)(@types/react@18.3.17)(react@18.3.1)
+      react-native-web: 0.19.13(react-dom@18.3.1)(react@18.3.1)
+    dev: false
+
   /expo-constants@17.0.3(expo@52.0.19)(react-native@0.76.5):
     resolution: {integrity: sha512-lnbcX2sAu8SucHXEXxSkhiEpqH+jGrf+TF+MO6sHWIESjwOUVVYlT8qYdjR9xbxWmqFtrI4KV44FkeJf2DaFjQ==}
     peerDependencies:
@@ -4918,6 +4942,23 @@ packages:
       expo: '*'
     dependencies:
       expo: 52.0.19(@babel/core@7.26.0)(@babel/preset-env@7.26.0)(react-native-webview@13.12.5)(react-native@0.76.5)(react@18.3.1)
+    dev: false
+
+  /expo-image-loader@5.0.0(expo@52.0.19):
+    resolution: {integrity: sha512-Eg+5FHtyzv3Jjw9dHwu2pWy4xjf8fu3V0Asyy42kO+t/FbvW/vjUixpTjPtgKQLQh+2/9Nk4JjFDV6FwCnF2ZA==}
+    peerDependencies:
+      expo: '*'
+    dependencies:
+      expo: 52.0.19(@babel/core@7.26.0)(@babel/preset-env@7.26.0)(react-native-webview@13.12.5)(react-native@0.76.5)(react@18.3.1)
+    dev: false
+
+  /expo-image-picker@16.0.3(expo@52.0.19):
+    resolution: {integrity: sha512-c4IOqIQOtx8puWWU4fVsJhuGiAhH6gAIdrVzhimOXSEUHnfxCckRYzvznbd/0cuvaA5y9H0CSYrxpTUc/0WNVw==}
+    peerDependencies:
+      expo: '*'
+    dependencies:
+      expo: 52.0.19(@babel/core@7.26.0)(@babel/preset-env@7.26.0)(react-native-webview@13.12.5)(react-native@0.76.5)(react@18.3.1)
+      expo-image-loader: 5.0.0(expo@52.0.19)
     dev: false
 
   /expo-keep-awake@14.0.1(expo@52.0.19)(react@18.3.1):
